@@ -1,0 +1,81 @@
+# ============================================================
+# .gitignore  —  Cyberbullying Detection thesis project
+# ============================================================
+
+# ------------------------------------------------------------
+# 1) PRIVACY — files that contain personal data (phone numbers,
+#    student IDs). These are internal supervisor/department
+#    documents, not meant for a public repository.
+#    Delete a line below if you deliberately want to include it.
+# ------------------------------------------------------------
+Meeting_Schedule_Form.*
+Meeting_Schedule_Filled.*
+Decision_Log.*
+Cyberbulling_Thesis_Review.*
+Thesis_Review.*
+Thesis_Changes_Oct2026.*
+
+# Internal planning / handoff notes (context only — not for public)
+prompt/
+*handoff*
+*prompt*.md
+
+# ------------------------------------------------------------
+# 2) DATASET — raw self-collected comments scraped from
+#    YouTube/Reddit/Facebook may breach platform terms and can
+#    contain personal info. Do NOT publish the raw data.
+# ------------------------------------------------------------
+*.csv
+Dataset/
+
+# ------------------------------------------------------------
+# 3) LaTeX build / auxiliary files (never commit these)
+# ------------------------------------------------------------
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.nav
+*.snm
+*.vrb
+*.idx
+*.ilg
+*.ind
+*.xdv
+
+# ------------------------------------------------------------
+# 4) Python / Jupyter
+# ------------------------------------------------------------
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# ------------------------------------------------------------
+# 5) OS / editor junk
+# ------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+.*.swp
+.vscode/
+.idea/
+
+# ------------------------------------------------------------
+# 6) OPTIONAL — uncomment to also keep the full thesis source
+#    private until grading is finished (avoids plagiarism-checker
+#    matching your own public repo).
+# ------------------------------------------------------------
+# Thesis_CyberBullying_FINAL.zip
+# Thesis Report/thesis_preview.pdf
